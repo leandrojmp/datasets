@@ -34,4 +34,5 @@ with open('airports.json', 'a') as output_file:
         airports['iata_code'] = airport.split(',')[13].strip('"')
         airports['local_code'] = airport.split(',')[14].strip('"')
         json.dump(airports, output_file)
+        output_file.write('\n')
     
